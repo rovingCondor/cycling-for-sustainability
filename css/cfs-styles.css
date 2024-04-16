@@ -1,0 +1,1218 @@
+:root {
+    /* Font Package */
+   --ff-headlines: "Montserrat", sans-serif;
+   --ff-body-copy: "Nunito Sans", sans-serif;
+   --ff-buttons: "Nunito Sans", sans-serif;
+
+   /* Colours */
+   --clr-liftow-orange: #FF6C0C;
+   --clr-hover-100: #f3cb00;
+}
+
+
+
+/* Basic reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+/* =============================== */
+/* Fonts */
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+// <width>: Use a value from 75 to 125
+// <lowercase height>: Use a value from 440 to 540 */
+
+/* .nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" <width>,
+    "YTLC" <lowercase height>;
+} */
+
+body {
+    background-color: #0e0e0e;
+    text-align: center;
+}
+
+/* =============================== */
+/* Utility Classes */
+.content-container {
+    margin: 0 auto;
+    width: min(100%, 75rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-headlines)
+}
+
+h2 {
+    margin: 1rem 0 3rem 0;
+    font-size: 2.3rem;
+    font-weight: 800;
+    line-height: 105%;
+}
+
+h3 {
+    margin: 1rem 0 3rem 0;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 95%;
+}
+
+p {
+    font-family: var(--ff-body-copy);
+}
+
+button {
+    font-family: var(--ff-buttons);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+
+/* =============================== */
+/* Main style rules */
+/* =============================== */
+/* Offer Hero */
+.hero-cfs-offer {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.hero-cfs-offer-content-wrapper {
+    padding: 0 1rem;
+    width: min(100%, 100rem);
+    position: relative;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-cfs-offer .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .15;
+}
+
+.hero-cfs-offer .bg-img {
+    width: 250%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: -75%;
+    transform: translateY(-50%);
+}
+
+.offer-left-col {
+    /* border: 1px solid red; */
+    padding: 2rem 0;
+}
+
+.cfs-offer-copy-main {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.cfs-offer-copy-main img {
+    width: 100%;
+}
+
+/* .cfs-offer-copy-main .win {
+    font-size: 4.375rem;
+    font-weight: 800;
+    color: var(--clr-liftow-orange);
+}
+
+.cfs-offer-copy-main  .ebike {
+    font-size: 2.8rem;
+    color: #ffffff;
+} */
+
+/* .cfs-offer-copy-secondary {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-align: left;
+} */
+
+.cfs-offer-copy-secondary img {
+    /* border: 1px solid red; */
+    width: min(100%, 29rem);
+}
+
+.cfs-offer-img.mobile {
+    max-width: 100%;
+}
+
+button.cfs-cta {
+    margin: 3rem 0 0 0;
+    padding: 0.75rem 1rem;
+    width: min(100%, 25rem);
+    border: none;
+    background-color: var(--clr-liftow-orange);
+    transition: all 200ms ease;
+}
+
+button.cfs-cta:hover {
+    color: #000000;
+    background-color: var(--clr-hover-100);
+}
+
+.cfs-offer-img.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 720px) {
+    .hero-cfs-offer-content-wrapper {
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-cfs-offer .bg-img {
+        width: 100%;
+        left: 0;
+    }
+
+    .cfs-offer-copy-secondary img {
+        /* border: 1px solid red; */
+        width: min(90%, 29rem);
+    }
+
+    .offer-right-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cfs-offer-img.mobile {
+        display: none;
+    }
+
+    .cfs-offer-img.desktop {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+
+
+/* =============================== */
+/* CFS Main Hero */
+.hero-cfs {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+@media screen and (min-width: 720px) {
+    .hero-cfs {
+        background-position: center;
+    }
+}
+
+.hero-cfs-content-container {
+    margin: 0 auto;
+    padding: 10rem 1rem 3rem 1rem;
+    width: min(100%, 70rem);
+    text-align: center;
+}
+
+.hero-cfs-content-container .content {
+    position: relative;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.hero-cfs-content-container h1 {
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 7vw + 1rem, 7rem); 
+    line-height: 105%;
+    text-align: center;
+}
+
+.hero-cfs-content-container p {
+    font-size: clamp(0.7rem, 1vw + 1rem, 1.5rem); 
+    line-height: 140%
+}
+
+.hero-cfs-content-container .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .75;
+}
+
+.hero-cfs-content-container .bg-img {
+    height: 100%;
+    /* object-fit: cover; */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translate(-50%);
+}
+
+@media screen and (min-width: 720px) {
+    .hero-cfs-content-container .bg-img {
+        width: 100%;
+        object-fit: cover;
+        left: 50%;
+    }
+}
+
+
+
+
+
+/* CFS Navigation Cards */
+.nav-cards-main-container {
+    position: relative;
+}
+
+.nav-cards-content-wrapper {
+    width: 100%;
+}
+
+.nav-cards-content-wrapper .nav-card-container:nth-child(odd) {
+    background-color: #111111;
+}
+
+.nav-cards-content-wrapper .nav-card-container:nth-child(even) {
+    background-color: #1b1b1b;
+}
+
+.nav-card-container {
+    padding: 2rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav-card-container:nth-child(odd) {
+    border-top: 0.125rem solid #444444;
+    border-bottom: 0.125rem solid #444444;
+}
+
+
+.nav-card-img-wrapper {
+    margin: 0 auto;
+    width: 70%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50rem;
+}
+
+.nav-card-img-wrapper img {
+    width: 150%;
+    position: relative;
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%);
+}
+
+.nav-card-content {
+    padding: 0 1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    .nav-cards-content-wrapper {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nav-card-container:nth-child(odd) {
+        border-top: none;
+        border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-cards-content-wrapper {
+        width: min(100%, 70rem);
+        position: absolute;
+        z-index: 90000;
+        top: -8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 2rem;
+    }
+    
+}
+
+h2.nav-card-heading {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.43rem;
+    font-weight: 800;
+}
+
+p.nav-card-sub-copy {
+    margin: 0 0 2rem 0;
+}
+
+a .nav-card-btn {
+    margin: 1rem 0 0 0;
+    padding: 0.75rem 1rem;
+    width: min(100%, 20rem);
+    border: 0.2rem solid #FF6C0C;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #FF6C0C;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+}
+
+a .nav-card-btn:hover {
+    color: #000;
+    background-color: #FF6C0C;
+}
+
+
+
+
+
+/* =============================== */
+/* CFS Offer Main Section */
+.cfs-offer-section-content-main-container {
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.grid-main-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "offer"
+        "form"
+        /* "subheading" */
+        "legal";
+    color: #ffffff;
+}
+.cfs-offer-section-content-wrapper {
+        grid-area: offer;
+        overflow: hidden;
+    }
+    
+    .form-container {
+        margin-top: 3rem;
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+    }
+    .subheading-container {
+        grid-area: subheading;
+    }
+    
+    .legal-promo {
+        grid-area: legal;
+    }
+
+    .cfs-offer-section-content-main-container .clr-fill {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        opacity: .35;
+    }
+    
+    .cfs-offer-section-content-main-container .bg-img {
+        width: 200%;
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        left: -50%;
+        transform: translateY(-50%);
+    }
+    
+    .cfs-offer-copy-main-section img {
+        width: 100%;
+    }
+
+    .cfs-offer-bike-main-section img {
+        width: 100%;
+    }
+    
+    .cfs-offer-copy-secondary-main-section img {
+        width: min(100%, 27rem);
+    }
+
+    .form-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        background-color: #000000;
+        opacity: 0.7;
+    }
+
+    .form-container form.cfs-form {
+        margin: 2rem 0;
+        width: 100%;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subheading-container h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: var(--clr-liftow-orange);
+    }
+
+    .subheading-container p {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .legal-promo {
+        padding: 2rem 0;
+        font-family: var(--ff-body-copy);
+        font-size: 0.7rem;
+    }
+
+@media screen and (min-width: 425px) {
+    .cfs-offer-section-content-main-container .bg-img {
+        top: 20%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .grid-main-container {
+        margin: 0 auto;
+        width: min(100%, 100rem);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            /* "offer form" */
+            "offer form"
+            "legal legal";
+        gap: 3rem;
+        color: #ffffff;
+    }
+
+    .cfs-offer-section-content-main-container .bg-img {
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        transform: translateY(0%);
+    }
+
+    .subheading-container h3 {
+        margin-bottom: 0;
+    }
+
+    .subheading-container p {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-main-container {
+        padding-top: 25rem;
+    }
+
+    .cfs-offer-section-content-main-container .bg-img {
+        top: 32%;
+    }
+
+    .form-container h3 {
+        margin: 2rem auto 0 auto;
+        width: min(100%, 33rem);
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/* =============================== */
+/* Upcoming Events */
+.upcoming-events-container {
+    padding: 2rem 0;
+    background-color: #ffffff;
+}
+
+.upcoming-events-container .cards .grid-item {
+    height: 10rem;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.upcoming-events-container .cards {
+    display: grid;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+
+    .upcoming-events-container .cards {
+        margin: 0 auto;
+        width: min(100%, 75rem);
+        grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+        gap: 1rem;
+    }
+}
+
+.upcoming-events-section h2 {
+    color: var(--clr-liftow-orange);
+}
+
+.upcoming-events-section h3 {
+    color: var(--clr-liftow-orange);
+}
+
+
+
+/* =============================== */
+/* Liftow Cycling Team */
+.cycling-team-container {
+    padding: 2rem 0;
+    background-color: var(--clr-liftow-orange)
+}
+
+.cycling-team-main-container {
+    margin: 0 auto;
+    width: min(100%, 100rem);
+}
+
+.cycling-team-container .content-container {
+    padding: 0 1rem;
+}
+
+.cycling-team-container hr {
+    height: 0.3rem;
+    background-color: #000000;
+    border: none;
+}
+
+.cycling-team-member {
+    margin: 0;
+    padding: 0rem 0;
+}
+
+.team-member-img img {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.cycling-team {
+    margin: 0 auto 2rem auto;
+}
+
+.cycling-team-container h2 {
+    margin: 1rem 0 0.5rem 0;
+    color: #ffffff;
+}
+
+.cycling-team h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.team-member-details h3 {
+    margin: 0.5rem;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.team-member-details h4 {
+    margin: 0 0 1.4rem 0;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.cycling-team-container p {
+    margin: 0 0 3rem 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.team-member-details button {
+    margin: 0 0 2rem 0;
+    padding: 0.5rem 1rem;
+    width: min(100%, 25rem);
+    border: none;
+    background-color: #000000;
+    transition: all 200ms ease;
+}
+
+.team-member-details button:hover {
+    color: var(--clr-liftow-orange);
+    background-color: #ffffff;
+}
+
+
+
+.team-k-w .content-wrapper {
+    background-color: #ffffff;
+}
+
+
+@media screen and (min-width: 900px) {
+    .cycling-team-member {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        gap: 2rem;
+    }
+
+    .team-member-img img {
+        margin: 0;
+    }
+
+    .team-member-details {
+        text-align: left;
+    }
+}
+
+
+
+@media screen and (min-width: 720px) {
+    .team-k-w .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Liftow Cycling Team Member | Modal | START */
+
+/* Modal Content */
+.modal-content {
+    background-color: #bababa;
+    width: 60%;
+}
+
+
+/* Close Button */
+.close {
+    color: #aaaaaa;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #797979;
+}
+
+/* Modal Background */
+.modal-01, .modal-02, .modal-03 {
+    display: none;
+}
+.modal-visible {
+    display: block;
+    position: fixed;
+    z-index: 1; /* Move on top of everything */
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+
+/* Liftow Cycling Team Member | Modal | END */
+
+
+
+
+/* =============================== */
+/* Go Green. Go Electric  */
+.main-container {
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.main-content-wrap {
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: min(100%, 100rem); 
+    position: relative;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;      
+}
+
+.block-01 h2 {
+    margin-bottom: 2rem;
+}
+
+button.cta-btn {
+    margin: 2rem 0 0 0;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    border: none;
+    background-color: var(--clr-liftow-orange);
+    font-size: 1rem;
+    transition: all 200ms ease;
+}
+
+button.cta-btn:hover {
+    background-color: var(--clr-hover-100);
+    color: #000000;
+}
+
+.bg-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.bg-image {
+    width: 150%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media screen and (min-width: 720px) {
+    .main-content-wrap {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+
+
+
+/* =============================== */
+/* Get Involved */
+.get-involved-container {
+    padding: 2rem 0;
+    background-color: #2A2A2A;
+}
+
+.get-involved-container .main-content-container {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    width: min(100%, 100rem);
+}
+
+.get-involved-container .main-content-container h2 {
+    border: 1px solid red;
+    margin: 0 auto 2rem auto;
+    width: min(100%, 62.5rem);
+    color: var(--clr-liftow-orange);
+}
+
+.get-involved-content-container .img-container {
+    border: 1px solid red;
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.get-involved-content-container .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.get-involved-content-container .content-container {
+    border: 1px solid red;
+}
+
+.get-involved-content-container .content-container p {
+    margin: 0 0 3rem 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    .get-involved-content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .get-involved-content-container {
+        grid-template-columns: 2fr 3fr;
+
+    }
+
+    .get-involved-content-container .img-container {
+        width: 70%;
+    }
+}
+
+
+
+
+
+/* =============================== */
+/* Social Feed */
+.social-feed-cfs {
+    padding: 2rem 0;
+    background-color: #d1d1d1;
+}
+
+.social-feed-cfs .cards {
+    display: grid;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+    .social-feed-cfs .cards {
+        margin: 0 auto;
+        width: min(100%, 75rem);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+.social-feed-cfs .cards .grid-item {
+    height: 10rem;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+
+
+/* =============================== */
+/* Why choose an electric forklift? */
+.choose-forklift-container {
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 720px) {
+    .forklift-benefit-main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+/* =============================== */
+/* Electric forklift whitepaper*/
+.electric-forklift-whitepaper-form {
+    padding: 3rem 0;
+    background-color: #D9D9D9;
+}
+
+.electric-forklift-whitepaper-form .content-container {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.electric-forklift-whitepaper-form h2{
+    margin: 1rem 0;
+    font-size: 1.625rem;
+    color: #77777A;
+}
+
+.electric-forklift-whitepaper-form p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 110%;
+    color: #3A3A3A;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 80%;
+}
+
+.whitepaper-form-container .form-item {
+    margin-top: 1rem;
+    padding: 1.2rem 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-body-copy);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+.whitepaper-form-container .form-item label {
+    color: #5f5f5f;
+}
+
+.whitepaper-form-container .form-item input {
+    margin: 0.25rem 0;
+    padding: 0.7rem;
+}
+
+.whitepaper-form-container button.whitepaper {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    border: none;
+    background-color: var(--clr-liftow-orange);
+    font-size: 1rem;
+    transition: all 200ms ease;
+}
+
+@media screen and (min-width: 720px) {
+    .electric-forklift-whitepaper-form .content-container {
+        grid-template-columns: 3fr 2fr;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .img-container img {
+        width: 100%;
+    }
+
+}
+
+
+/* =============================== */
+/* Grids | START */
+
+.grids {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.grid-container.one-block, 
+.grid-container.two-block,
+.grid-container.three-block {
+    margin: 2rem auto;
+    width: min(100%, 1600px);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-container.one-block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .grid-container.two-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .grid-container.three-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        text-align: left;
+    }
+}
+
+.grid-container .grid-item {
+    padding: 1rem 2rem 1rem 2rem;
+    min-height: 27.5rem;
+    background-color: #333333;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-container .grid-item {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+}
+
+.grid-container .grid-item .grid-content {
+    position: relative;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 900px) {
+    .grid-container .grid-item .grid-content {
+        top: 0%;
+        transform: translateY(0%);
+    }
+
+    .grid-container.one-block .grid-item .grid-content h3,
+    .grid-container.one-block .grid-item .grid-content p {
+        width: min(100%, 50rem);
+    }
+}
+
+.grid-container .grid-item h3,
+.grid-container .grid-item p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.grid-container .grid-item h3 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.grid-container .grid-item p {
+    font-size: 1.25rem;
+    line-height: 160%;
+}
+
+.grid-container button {
+    margin-top: 2rem;
+    padding: .75rem 3rem;
+    width: min(100%, 20rem);
+    font-size: 1.25rem;
+    letter-spacing: 0em;
+    border: none;
+    background-color: #FF6C0C;
+}
+
+.grid-container .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-container.one-block .button-container {
+        margin-top: 2rem;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.grid-container.one-block .button-container button {
+    margin-top: 1rem;
+    width: min(100%, 20rem);
+}
+
+
+.grid-container button:hover {
+    background-color: #aa4400;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-container button {
+        width: min(100%, 15rem);
+    }
+}
+
+.grid-container .grid-item {
+    position: relative;
+}
+
+.grid-container .grid-item .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.75;
+}
+
+.grid-container .grid-item .grid-img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container.one-block .grid-item .grid-img-container img,
+.grid-container.two-block .grid-item .grid-img-container img,
+.grid-container.three-block .grid-item .grid-img-container img {
+    transform: scale(150%);
+}
+
+@media screen and (min-width: 900px) {
+    .grid-container.one-block .grid-item .grid-img-container img {
+        transform: scale(250%);
+    }
+}
+
+/* =============================== */
+/* Grids | END */
