@@ -1,0 +1,428 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+    "sections": {
+      "main": {
+        "type": "page",
+        "disabled": true,
+        "custom_css": [
+          "h2 {font-size: 50px;}"
+        ],
+        "settings": {
+        }
+      },
+      "static_announcement_campaign_NGicHK": {
+        "type": "static-announcement-campaign",
+        "settings": {
+        }
+      },
+      "cfs_campaign_offer_hero_VQCHDm": {
+        "type": "cfs-campaign-offer-hero",
+        "settings": {
+          "cfs-offer-hero": "Input title",
+          "bg-image": "shopify:\/\/shop_images\/electric-bg.jpg",
+          "image_hero": "shopify:\/\/shop_images\/Liftow-e-bike_updated.png",
+          "offer-headline": "shopify:\/\/shop_images\/win-lockup.svg",
+          "offer-subheadline": "shopify:\/\/shop_images\/win-secondary.png"
+        }
+      },
+      "dynamic_html_6TEYaN": {
+        "type": "dynamic-html",
+        "custom_css": [
+          ".video-container {margin: -2rem auto 3rem auto; width: min(100%, 800px);}"
+        ],
+        "settings": {
+          "title": "",
+          "custom_html": "<div class=\"video-container\">\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/YJJonnjpbjo?si=F0kkbh0d_9fw4U6D\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>\n<\/div>"
+        }
+      },
+      "dynamic_video_gzHwkN": {
+        "type": "dynamic-video",
+        "disabled": true,
+        "custom_css": [
+          ".dynamic-video-wrapper {margin-bottom: 3rem;}",
+          ".video {display: flex; justify-content: center; left: -50%;}"
+        ],
+        "settings": {
+          "title": "",
+          "url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "show_caption": false,
+          "caption": "<p>A short description of the video.<\/p>",
+          "autoplay": false,
+          "aspect_ratio": "16-9",
+          "position": "center-center",
+          "show_overlay": false,
+          "background": "#000000",
+          "opacity": 50
+        }
+      },
+      "hero_campaign_W8F7VB": {
+        "type": "hero-campaign",
+        "custom_css": [
+          ".btn-hero {display: none;}"
+        ],
+        "settings": {
+          "heading": "Cycling towards sustainability",
+          "subheading": "In the material handling industry, Liftow is not just a provider of solutions, we are pioneers of progress. As we navigate towards a more sustainable future, we've chosen the sport of cycling as a symbol of our commitment to eco-responsibility and the electrification revolution.",
+          "button": "Button text",
+          "button-link": "https:\/\/www.google.com",
+          "image_hero": "shopify:\/\/shop_images\/liftow-cycling-team.jpg"
+        }
+      },
+      "campaign_cards_hero_3_up_P4zmhM": {
+        "type": "campaign-cards-hero-3-up",
+        "settings": {
+          "card-01-heading": "Upcoming Events",
+          "card-01-button": "Event Schedule",
+          "card-01-button-link": "#events",
+          "card-01-image": "shopify:\/\/shop_images\/placeholder-image-01.jpg",
+          "card-01-alt-text": "",
+          "card-02-heading": "Cycling Team",
+          "card-02-button": "View team",
+          "card-02-button-link": "#team",
+          "card-02-image": "shopify:\/\/shop_images\/liftow-cycling-team.jpg",
+          "card-02-alt-text": "",
+          "card-03-heading": "Electric Forklifts",
+          "card-03-button": "Learn more",
+          "card-03-button-link": "#whitepaper",
+          "card-03-image": "shopify:\/\/shop_images\/cfs-card-04.jpg",
+          "card-03-alt-text": ""
+        }
+      },
+      "cfs_campaign_offer_main_HYW4q6": {
+        "type": "cfs-campaign-offer-main",
+        "settings": {
+          "cfs-offer-hero": "Input title",
+          "bg-image": "shopify:\/\/shop_images\/electric-bg.jpg",
+          "image_hero": "shopify:\/\/shop_images\/Liftow-e-bike_updated.png",
+          "offer-headline": "shopify:\/\/shop_images\/win-lockup.svg",
+          "offer-subheadline": "shopify:\/\/shop_images\/win-secondary.png"
+        }
+      },
+      "campaign_heading_9kFe36": {
+        "type": "campaign-heading",
+        "custom_css": [
+          ".heading {padding-bottom: 1px;}",
+          ".heading button.btn {display: none;}"
+        ],
+        "settings": {
+          "id": "events",
+          "h2-heading": "Upcoming Events: 2024",
+          "h3-heading": "",
+          "para": "",
+          "button": "Button text",
+          "button-link": ""
+        }
+      },
+      "grid_cards_2_block_XxwTKk": {
+        "type": "grid-cards-2-block",
+        "disabled": true,
+        "custom_css": [
+          ".grids {margin-top: -70px;}"
+        ],
+        "settings": {
+          "block01-headline": "Mattamy Homes Bike for Brain Health",
+          "block01-para": "Sunday June 2, 2024 | Toronto",
+          "block01-button01": "Learn more",
+          "block01-button01-link": "https:\/\/support.baycrestfoundation.org\/site\/TR?team_id=1537&fr_id=1060&pg=team",
+          "block01-img": "shopify:\/\/shop_images\/liftow-cycling-team-03.jpg",
+          "block02-headline": "24-Hours of Summer Solstice",
+          "block02-para": "June 22-23, 2024 | Albion Hills Conservation Park",
+          "block02-button01": "Register",
+          "block02-button01-link": "https:\/\/www.chicoracing.com\/liftow-sponsors-the-24-hours-of-summer-solstice\/",
+          "block02-img": "shopify:\/\/shop_images\/liftow-cycling-team-02.jpg"
+        }
+      },
+      "grid_cards_1_block_MX8Vem": {
+        "type": "grid-cards-1-block",
+        "custom_css": [
+          ".grids {padding-top: 1px;}",
+          ".btn-02,.btn-03 {display: none;}"
+        ],
+        "settings": {
+          "block01-headline": "24-Hours of Summer Solstice",
+          "block01-para": "June 22-23, 2024 | Albion Hills Conservation Park",
+          "block01-button01": "Register",
+          "block01-button01-link": "https:\/\/support.baycrestfoundation.org\/site\/TR?team_id=1537&fr_id=1060&pg=team",
+          "block01-button02": "",
+          "block01-button02-link": "",
+          "block01-button03": "",
+          "block01-button03-link": "",
+          "block01-img-01": "shopify:\/\/shop_images\/liftow-cycling-team-02.jpg",
+          "block01-img-02": "shopify:\/\/shop_images\/liftow-cycling-team-02.jpg"
+        }
+      },
+      "grid_cards_1_block_FpjJMj": {
+        "type": "grid-cards-1-block",
+        "custom_css": [
+          ".grids {margin-top: -100px;}"
+        ],
+        "settings": {
+          "block01-headline": "RAID Banque Nationale",
+          "block01-para": "Notre équipe est prête à relever le défi du RAID Banque Nationale, présenté par Tetra Tech. Plus que jamais, notre centre hospitalier a besoin de nous.",
+          "block01-button01": "Équipe 1",
+          "block01-button01-link": "https:\/\/jedonneenligne.org\/fhdl\/campagne\/RAIDBanqueNationale\/teams\/view\/15bd8327-938b-11ee-ac26-001dd8b75df7",
+          "block01-button02": "Équipe 2",
+          "block01-button02-link": "https:\/\/jedonneenligne.org\/fhdl\/campagne\/RAIDBanqueNationale\/teams\/view\/20fb2833-938b-11ee-ac26-001dd8b75df7",
+          "block01-button03": "Équipe 3",
+          "block01-button03-link": "https:\/\/jedonneenligne.org\/fhdl\/campagne\/RAIDBanqueNationale\/teams\/view\/292bfec9-938b-11ee-ac26-001dd8b75df7",
+          "block01-img-01": "shopify:\/\/shop_images\/liftow-cycling-team-05b.jpg",
+          "block01-img-02": "shopify:\/\/shop_images\/liftow-cycling-team-05.jpg"
+        }
+      },
+      "grid_cards_3_block_ph4HqE": {
+        "type": "grid-cards-3-block",
+        "disabled": true,
+        "custom_css": [
+          ".grids {margin-top: -100px;}"
+        ],
+        "settings": {
+          "block01-headline": "Headline",
+          "block01-para": "Lorem ipsum dolor sit amet legimus omittantur nec dolor",
+          "block01-button01": "Button text",
+          "block01-button01-link": "",
+          "block01-img": "shopify:\/\/shop_images\/liftow-cycling-team-06.jpg",
+          "block02-headline": "Headline",
+          "block02-para": "Lorem ipsum dolor sit amet legimus omittantur nec dolor",
+          "block02-button01": "Button text",
+          "block02-button01-link": "",
+          "block02-img": "shopify:\/\/shop_images\/liftow-cycling-team-roy-reyes.jpg",
+          "block03-headline": "Headline",
+          "block03-para": "Lorem ipsum dolor sit amet legimus omittantur nec dolor",
+          "block03-button01": "Button text",
+          "block03-button01-link": "",
+          "block03-img": "shopify:\/\/shop_images\/liftow-cycling-team-05.jpg"
+        }
+      },
+      "campaign_heading_iqUfBA": {
+        "type": "campaign-heading",
+        "custom_css": [
+          ".heading {padding-bottom: 1px;}",
+          ".heading button.btn {display: none;}"
+        ],
+        "settings": {
+          "id": "events",
+          "h2-heading": "Past Events",
+          "h3-heading": "",
+          "para": "",
+          "button": "Button text",
+          "button-link": ""
+        }
+      },
+      "grid_cards_1_block_xyYhYQ": {
+        "type": "grid-cards-1-block",
+        "custom_css": [
+          ".grids {padding-top: 1px;}",
+          ".btn-02,.btn-03 {display: none;}"
+        ],
+        "settings": {
+          "block01-headline": "Mattamy Homes Bike for Brain Health",
+          "block01-para": "Sunday June 2, 2024 | Toronto",
+          "block01-button01": "Learn more",
+          "block01-button01-link": "https:\/\/support.baycrestfoundation.org\/site\/TR?team_id=1537&fr_id=1060&pg=team",
+          "block01-button02": "",
+          "block01-button02-link": "",
+          "block01-button03": "",
+          "block01-button03-link": "",
+          "block01-img-01": "shopify:\/\/shop_images\/liftow-cycling-team-03.jpg",
+          "block01-img-02": "shopify:\/\/shop_images\/liftow-cycling-team-03.jpg"
+        }
+      },
+      "campaign_cfs_team_7WFNHz": {
+        "type": "campaign-CFS-team",
+        "settings": {
+          "id": "team",
+          "h2-heading": "Liftow Cycling Team",
+          "h3-heading": "Sponsored Riders",
+          "team-member-name-01": "SARAH CAYLOR",
+          "team-member-title-01": "SOLO RIDER AT THE 24 HOUR SUMMER SOLSTICE",
+          "team-member-01-bio": "Sarah, an Offroad Endurance Cyclist, trail runner, chef, and gardener, has dedicated over 25 years to the world of cycling.",
+          "team-member-01-full-bio": "Sarah, an Offroad Endurance Cyclist, trail runner, chef, and gardener, has dedicated over 25 years to the world of cycling. With a love for the ride and a competitive spirit, she has achieved significant success in 24 Hour Solo racing, 100-mile Marathon cross country racing, and multi-day bikepacking races, both domestically and internationally.\nSarah's journey includes a background in off-road triathlon and Adventure Racing, leading her to develop a newfound passion for trail running and Ultra racing.\nAs she looks forward to a full year of challenges in 2024, both on the bike and on foot, Sarah expresses her excitement to represent Liftow in her pursuits.\nGrateful for the opportunity to be part of the team, she eagerly anticipates the adventures and accomplishments that lie ahead, thanking Liftow for including her in their endeavors.",
+          "button-01": "Sarah’s bio",
+          "image-01": "shopify:\/\/shop_images\/liftow-cycling-team-sarah-c.jpg",
+          "team-member-name-02": "ALEX GIES",
+          "team-member-title-02": "14 YEAR-OLD PROTEGE IN TRACK CYCLING",
+          "team-member-02-bio": "Alex Gies, 14-year-old competitive cyclist. Alex trains and races with the KW Cycling Academy.",
+          "team-member-02-full-bio": "Alex Gies, 14-year-old competitive cyclist. Alex trains and races with the KW Cycling Academy. His favourite discipline is track cycling and he spends a lot of time honing his skills at the Mattamy National Cycling Centre in Milton, Ontario, and the Forest City Velodrome in London, Ontario. He loves the thrill of racing around the banked track, and the challenge of racing tactically difficult races. He also has a lot of fun mountain biking and is excited to compete in both mountain bike and road races this summer. When he’s not cruising around on two wheels, he spends his time with his friends, playing with his dog and travelling with his family.",
+          "button-02": "Alex’s bio",
+          "image-02": "shopify:\/\/shop_images\/liftow-cycling-team-alex-g.jpg",
+          "team-member-name-03": "ROY REYES",
+          "team-member-title-03": "UP-AND-COMING CHAMPION IN GRAVEL RACING",
+          "team-member-03-bio": "In 2020, Roy committed to a healthier lifestyle, embracing cycling as his primary outdoor exercise during the pandemic as a member of the Pinoy Pedal Pushers cycling group.",
+          "team-member-03-full-bio": "In 2020, Roy committed to a healthier lifestyle, embracing cycling as his primary outdoor exercise during the pandemic. Joining the Pinoy Pedal Pushers cycling group, he transitioned from a mountain biker to a gravel grinder and road cyclist, deepening his passion for the sport. Throughout 2023, Roy intensified his cycling involvement, incorporating strength training, volleyball, dog walks, and running for a duathlon event. His journey in cycling has fostered lasting friendships, participation in fundraisers, charity events, and various races. Roy's dedication serves as inspiration for others, echoing the impact experienced riders had on him. Roy’s racing schedule Gravel Races: Scrappy Badger - May 4 Screaming Squirrel - June 9 Reggie Ramble - July 13 Eager Beaver - August 25 XC Mountain Bike Races: Singletrack Classic - August 27 24 Hour Solstice - June 22-23 Kingston XC - September 7 Epic 8 Hour Solo - September 21 Turkey Point XC - October 19",
+          "button-03": "Roy’s bio & schedule",
+          "image-03": "shopify:\/\/shop_images\/liftow-cycling-team-roy-reyes.jpg",
+          "team-member-name-04": "LOUIS-JÉRÔME PARÉ",
+          "team-member-title-04": "COMPETITIVE ROAD CYCLIST | QUEBEC",
+          "team-member-04-bio": "Louis-Jerome, a father of three, competes at the highest level of cycling. Starting as a road cyclist, he transitioned to triathlons, competing globally in Ironman events while working as a sales manager for major bike brands",
+          "team-member-04-full-bio": "Louis-Jerome, a father of three, competes at the highest level of cycling. Starting as a road cyclist, he transitioned to triathlons, competing globally in Ironman events while working as a sales manager for major bike brands. Exploring disciplines like Cyclocross, he now focuses on gravel racing and road events, embracing the cycling lifestyle mantra. As part of the Liftow sales team, Louis-Jerome proudly represents the company's culture and philosophy with customers and the cycling community. LOUIS-JÉRÔME’s racing schedule Rasputitsa Dirt - April 21 Le Raid Banque Nationale - May 25 La Presta - May 27 La Garnotte - June 16 La Buckland sur gravelle - July Big Red Gravel Run - August 11 Les 100 à B7 September 22 Bromont Ultra - October 27",
+          "button-04": "Louis-Jerome’s bio & schedule",
+          "image-04": "shopify:\/\/shop_images\/liftow-cycling-team-lui-jerome.jpg"
+        }
+      },
+      "section_h2_N67MRJ": {
+        "type": "section-h2",
+        "blocks": {
+          "image_pFnJz9": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Electric-Line-Up.png"
+            }
+          }
+        },
+        "block_order": [
+          "image_pFnJz9"
+        ],
+        "custom_css": [
+          "button {display: none;}"
+        ],
+        "settings": {
+          "heading": "Why choose a Liftow electric forklift?"
+        }
+      },
+      "campaign_heading_VddPwW": {
+        "type": "campaign-heading",
+        "custom_css": [
+          "section.heading {margin: -5rem 0 -2rem 0;}",
+          ".heading h2,.heading h3,.heading p {display: none;}"
+        ],
+        "settings": {
+          "id": "forklifts",
+          "h2-heading": "Heading",
+          "h3-heading": "Subheading",
+          "para": "Lorem ipsum salat dolor",
+          "button": "Learn more",
+          "button-link": "https:\/\/liftow.com\/pages\/toyota-electric-forklifts"
+        }
+      },
+      "dynamic_highlights_banner_wCWmYn": {
+        "type": "dynamic-highlights-banner",
+        "blocks": {
+          "highlight_dwfqML": {
+            "type": "highlight",
+            "settings": {
+              "icon": "none",
+              "image": "shopify:\/\/shop_images\/icon_lower-cost.png",
+              "title": "Lower Operating Costs",
+              "text": "<p>Electric forklifts typically have lower operating costs compared to internal combustion models and have less maintenance interval.<\/p>",
+              "link": ""
+            }
+          },
+          "highlight_j7E8Mc": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-cell-phone",
+              "image": "shopify:\/\/shop_images\/icon_charging-station.png",
+              "title": "Charging Station Convenience",
+              "text": "<p>Electric forklifts charge at dedicated charging stations, eliminating the need for fuel storage.<\/p>",
+              "link": ""
+            }
+          },
+          "highlight_BcDbgc": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-thumbs-up",
+              "title": "Cost Advantage of Electricity",
+              "text": "<p>The cost of electricity for electric forklifts is often significantly lower than the cost of fuel for internal combustion models.<\/p>",
+              "link": ""
+            }
+          },
+          "highlight_Q9GtAM": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-pin",
+              "image": "shopify:\/\/shop_images\/icon_leaf-environment.png",
+              "title": "Environmental and Operational Benefits",
+              "text": "<p>Electric forklifts produce zero emissions during operation, create minimal noise (except for the back-up alarm), and have features such as automatic braking for reduced wear and operator fatigue.<\/p>",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "highlight_dwfqML",
+          "highlight_j7E8Mc",
+          "highlight_BcDbgc",
+          "highlight_Q9GtAM"
+        ],
+        "custom_css": [
+  
+        ],
+        "settings": {
+          "section_spacing": false,
+          "section_width": "full-width",
+          "icon_layout": "center",
+          "color": "#4d4d4d",
+          "icon_color": "#4d4d4d",
+          "background_color": "#ffffff",
+          "mobile_layout": "slider"
+        }
+      },
+      "2_column_block_form_with_image_VfNVCf": {
+        "type": "2-column-block_form-with-image",
+        "settings": {
+          "id": "whitepaper",
+          "heading": "Find out how to maximize your ROI with Toyota Electric Forklifts from Liftow",
+          "subcopy": "Enter your email address below and we will send you our whitepaper.",
+          "button": "Get it now!",
+          "image": "shopify:\/\/shop_images\/whitepaper-screenshot.png"
+        }
+      },
+      "2_column_block_bg_image_pPCeRF": {
+        "type": "2-column-block_bg-image",
+        "custom_css": [
+          "h2 span {color: #6dde5b;}",
+          "button {display: none;}",
+          ".block-02 img {width: 50%;}"
+        ],
+        "settings": {
+          "heading": "Go electric. Go Green.",
+          "subcopy": "As we navigate towards a more sustainable future campaign, we've chosen the sport of cycling as a symbol of our commitment to eco-responsibility and the electrification revolution.",
+          "button": "Input button text here",
+          "image": "shopify:\/\/shop_images\/Liftow-go-green-logo.svg",
+          "background-img": "shopify:\/\/shop_images\/green-bg.jpg"
+        }
+      },
+      "2_column_block_w7axDU": {
+        "type": "2-column-block",
+        "disabled": true,
+        "settings": {
+          "heading": "Lorem ipsum dolor sit amet",
+          "subcopy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+          "button": "Input button text here",
+          "image": "shopify:\/\/shop_images\/placeholder-image-01.jpg"
+        }
+      }
+    },
+    "order": [
+      "main",
+      "static_announcement_campaign_NGicHK",
+      "cfs_campaign_offer_hero_VQCHDm",
+      "dynamic_html_6TEYaN",
+      "dynamic_video_gzHwkN",
+      "hero_campaign_W8F7VB",
+      "campaign_cards_hero_3_up_P4zmhM",
+      "cfs_campaign_offer_main_HYW4q6",
+      "campaign_heading_9kFe36",
+      "grid_cards_2_block_XxwTKk",
+      "grid_cards_1_block_MX8Vem",
+      "grid_cards_1_block_FpjJMj",
+      "grid_cards_3_block_ph4HqE",
+      "campaign_heading_iqUfBA",
+      "grid_cards_1_block_xyYhYQ",
+      "campaign_cfs_team_7WFNHz",
+      "section_h2_N67MRJ",
+      "campaign_heading_VddPwW",
+      "dynamic_highlights_banner_wCWmYn",
+      "2_column_block_form_with_image_VfNVCf",
+      "2_column_block_bg_image_pPCeRF",
+      "2_column_block_w7axDU"
+    ]
+  }
+  

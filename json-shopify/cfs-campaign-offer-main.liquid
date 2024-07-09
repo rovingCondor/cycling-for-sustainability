@@ -1,0 +1,301 @@
+<section class="cfs-offer-section-content-main-container">
+
+    <div class="grid-main-container">
+        <!-- Grid item 01 | Offer -->
+        <div id="cfs-offer" class="cfs-offer-section-content-wrapper">
+            <div class="offer-section-grid-item-01">
+                <div class="cfs-offer-copy-main-section">
+                    <img src="{{ section.settings.offer-headline | image_url: width: '1000x' }}" alt="You could WIN our exclusive Liftow E-Bike">
+                </div>
+                <div class="cfs-offer-bike-main-section">
+                    <img class="cfs-offer-bike-main-section" src="{{ section.settings.image_hero | image_url: width: '1000x' }}" alt="Liftow E-Bike">
+                </div>
+                <div class="cfs-offer-copy-secondary-main-section">
+                    <img src="{{ section.settings.offer-subheadline | image_url: width: '1000x' }}" alt="You could WIN our exclusive Liftow E-Bike">
+                </div>
+            </div>
+        </div>
+        <!-- Grid item 02 | Form -->
+        <div class="form-container">
+            <h3>Enter your contact information for our sales team to learn more!</h3>
+            <!-- Form  -->
+            {% render 'm-contact-popup' %}
+        </div>
+        <small class="legal-promo">
+            * From now until December 31, 2024 for every purchase of a new Toyota Electric Forklift, you will automatically receive one entry into the raffle to win the Liftow E-Bike. Each customer is eligible for one entry regardless of the number of forklifts purchased. Multiple forklift purchases will not result in multiple entries. Drawing for the winner will be on January 6, 2025.
+        </small>
+    </div>
+    <div class="clr-fill"> </div>
+    <img class="bg-img" src="{{ section.settings.bg-image | image_url: width: '2600x' }}" alt="">
+
+</section>
+
+
+
+
+<style>
+.cfs-offer-section-content-main-container {
+padding: 0 1rem;
+position: relative;
+overflow: hidden;
+background-color: #000000;
+}
+
+.grid-main-container {
+padding-top: 2rem;
+padding-bottom: 2rem;
+position: relative;
+z-index: 1000;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+    "offer"
+    "form"
+    /* "subheading" */
+    "legal";
+color: #ffffff;
+}
+.cfs-offer-section-content-wrapper {
+    grid-area: offer;
+    overflow: hidden;
+}
+
+
+.form-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 700px; */
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    /* opacity: 0.7; */
+}
+
+.form-container h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.subheading-container {
+    grid-area: subheading;
+}
+
+.legal-promo {
+    grid-area: legal;
+    padding: 0;
+    font-family: var(--ff-body-copy);
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 800px) {
+.legal-promo {
+    padding: 2rem 0;
+}
+}
+
+
+.cfs-offer-section-content-main-container .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .35;
+}
+
+.cfs-offer-section-content-main-container .bg-img {
+    width: 200%;
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: -50%;
+    transform: translateY(-50%);
+}
+
+.cfs-offer-copy-main-section {
+  display: flex;
+  justify-content: center;
+}
+
+.cfs-offer-copy-main-section img {
+    width: 90%;
+}
+
+.cfs-offer-bike-main-section img {
+    width: 100%;
+}
+
+.cfs-offer-copy-secondary-main-section img {
+    width: min(100%, 27rem);
+}
+
+
+/* !! Override form theme styles | START !!  */
+.m_contact_form_image_overlay {
+  width: 100%;
+}
+
+.contact-page-content input.form-field-input {
+  background-color: #121212;
+  border: none;
+  border-bottom: 2px solid #797979; 
+  border-radius: 0;
+}
+
+.contact-page-content input.form-field-input:focus {
+  border-bottom: 2px solid #FF6C0C; 
+}
+
+.form-action-row {
+    margin-top: 3rem;
+  }
+
+.form-buttons {
+flex-direction: column;
+}
+
+@media screen and (min-width: 720px) {
+  
+  .form-fields-columns .form-field--half {
+    width: 100%;
+  }
+
+  .contact-page-content .form-fields-columns {
+    margin-bottom: 0;
+  }
+
+  .form-fields-columns .form-field {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form-action-row {
+    margin-left: -0.7rem;
+    margin-right: -0.7rem;
+  }
+
+  .form-row #telephone {
+    background-color: red;
+  }
+  
+}
+/* !! Override form theme styles | END !!  */
+  
+
+.subheading-container h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #FF6C0C;
+}
+
+.subheading-container p {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+@media screen and (min-width: 425px) {
+.cfs-offer-section-content-main-container .bg-img {
+    top: 20%;
+}
+}
+
+@media screen and (min-width: 900px) {
+.grid-main-container {
+    margin: 0 auto;
+    width: min(100%, 100rem);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "offer form"
+        "legal legal";
+    column-gap: 3rem;
+    row-gap: 0;
+    color: #ffffff;
+}
+
+.cfs-offer-section-content-main-container .bg-img {
+    width: 100%;
+    top: 10%;
+    left: 0%;
+    transform: translateY(0%);
+}
+
+.subheading-container h3 {
+    margin-bottom: 0;
+}
+
+.subheading-container p {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+.grid-main-container {
+    padding-top: 25rem;
+}
+
+.cfs-offer-section-content-main-container .bg-img {
+    top: 32%;
+}
+
+.form-container {
+    margin: 3rem 0 0 0;
+}
+
+.form-container h3 {
+    margin: 2rem auto 0 auto;
+    width: min(100%, 33rem);
+    font-size: 1.05rem;
+}
+}
+</style>
+
+{% schema %}
+{
+"name": "Campaign Offer Main CFS",
+"settings": [
+  {
+    "type": "text",
+    "label": "Section title",
+    "id": "cfs-offer-hero",
+    "default": "Input title"
+  },
+  {
+    "type": "image_picker",
+    "id": "bg-image",
+    "label": "Select background Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "image_hero",
+    "label": "Select hero Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "offer-headline",
+    "label": "Select offer headline Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "offer-subheadline",
+    "label": "Select offer subheadline Image"
+  }
+],
+"presets": [
+  {
+    "name": "Campaign Offer Main CFS"
+  }
+]
+}
+{% endschema %}

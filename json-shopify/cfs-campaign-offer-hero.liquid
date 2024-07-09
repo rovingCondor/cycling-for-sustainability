@@ -1,0 +1,236 @@
+  <!-- CFS | Offer Hero -->
+  <section class="hero-cfs-offer">
+    <div class="hero-cfs-offer-content-wrapper">
+        <!-- Left column | desktop -->
+        <div class="offer-left-col">
+            <div class="cfs-offer-copy-main">
+                <img src="{{ section.settings.offer-headline | image_url: width: '1000x' }}" alt="You could WIN our exclusive Liftow E-Bike">
+                <!-- You could<br> 
+                <span class="win">WIN</span><br>
+                <span class="exclusive">our exclusive</span><br>
+                <span class="win ebike">Liftow E-Bike</span> -->
+            </div>
+            <div class="cfs-offer-bike-mobile">
+                <img class="cfs-offer-img mobile" src="{{ section.settings.image_hero | image_url: width: '1000x' }}" alt="Liftow E-Bike">
+            </div>
+            <div class="cfs-offer-copy-secondary">
+                <img src="{{ section.settings.offer-subheadline | image_url: width: '1000x' }}" alt="You could WIN our exclusive Liftow E-Bike">
+                <!-- <img src="img/promo-forklift.png" alt="Toyota Forklift">
+                <p>with the purchase of a new Toyota Forklift*</p> -->
+            </div>
+            <a href="#cfs-offer">
+                <button class="cfs-cta">Let's go!</button>
+            </a>
+        </div>
+        <!-- Right column | desktop -->
+        <div class="offer-right-col">
+            <div class="cfs-offer-bike-desktop">
+                <img class="cfs-offer-img desktop" src="{{ section.settings.image_hero | image_url: width: '1000x' }}" alt="Liftow E-Bike">
+            </div>
+        </div>
+    </div>
+    <div class="clr-fill"> </div>
+    <img class="bg-img" src="{{ section.settings.bg-image | image_url: width: '2600x' }}" alt="">
+</section>
+
+
+<style>
+body {
+scroll-behavior: smooth;
+text-align: center;
+}
+
+.nav-cards-main-container {
+position: relative;
+}
+
+{% comment %} Utility Classes | START {% endcomment %}
+.content-container {
+margin: 0 auto;
+width: min(100%, 75rem);
+}
+{% comment %} Utility Classes | End {% endcomment %}
+
+{% comment %} Main Styles | START {% endcomment %}
+.hero-cfs-offer {
+position: relative;
+overflow: hidden;
+height: 100vh;
+display: flex;
+align-items: center;
+color: #ffffff;
+background-color: #000000;
+}
+
+.hero-cfs-offer-content-wrapper {
+padding: 0 1rem;
+width: min(100%, 100rem);
+position: relative;
+z-index: 100;
+display: grid;
+grid-template-columns: 1fr;
+color: #ffffff;
+text-align: center;
+}
+
+.hero-cfs-offer .clr-fill {
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 2;
+top: 0;
+left: 0;
+background-color: #000000;
+opacity: .15;
+}
+
+.hero-cfs-offer .bg-img {
+width: 250%;
+position: absolute;
+z-index: 1;
+top: 50%;
+left: -75%;
+transform: translateY(-50%);
+}
+
+
+.offer-left-col {
+/* border: 1px solid red; */
+padding: 2rem 0;
+}
+
+/* .cfs-offer-copy-main {
+font-family: "Montserrat", sans-serif;
+font-size: 1rem;
+font-weight: 600;
+line-height: 2.4rem;
+} */
+
+.cfs-offer-copy-main img {
+width: 90%;
+}
+
+/* .cfs-offer-copy-main .win {
+font-size: 4.375rem;
+font-weight: 800;
+color: var(--clr-liftow-orange);
+}
+
+.cfs-offer-copy-main  .ebike {
+font-size: 2.8rem;
+color: #ffffff;
+} */
+
+/* .cfs-offer-copy-secondary {
+display: grid;
+grid-template-columns: 3fr 4fr;
+align-items: center;
+font-size: 1.1rem;
+font-weight: 900;
+text-align: left;
+} */
+
+.cfs-offer-copy-secondary img {
+/* border: 1px solid red; */
+width: min(100%, 29rem);
+}
+
+.cfs-offer-img.mobile {
+max-width: 100%;
+}
+
+button.cfs-cta {
+margin: 3rem 0 0 0;
+padding: 0.75rem 1rem;
+width: min(100%, 25rem);
+border: none;
+background-color: #FF6C0C;
+transition: all 200ms ease;
+}
+
+button.cfs-cta:hover {
+color: #000000;
+background-color: yellow; 
+}
+
+.cfs-offer-img.desktop {
+display: none;
+}
+
+@media screen and (min-width: 720px) {
+
+.hero-cfs-offer {
+/* height: 80vh; */
+}
+
+.hero-cfs-offer-content-wrapper {
+margin: 0 auto;
+grid-template-columns: 1fr 1fr;
+}
+
+.hero-cfs-offer .bg-img {
+width: 100%;
+left: 0;
+}
+
+.cfs-offer-copy-secondary img {
+/* border: 1px solid red; */
+width: min(90%, 29rem);
+}
+
+.offer-right-col {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cfs-offer-img.mobile {
+display: none;
+}
+
+.cfs-offer-img.desktop {
+display: block;
+max-width: 100%;
+}
+}
+{% comment %} Main Styles | END {% endcomment %}
+</style>
+
+{% schema %}
+{
+"name": "Campaign Offer Hero CFS",
+"settings": [
+{
+"type": "text",
+"label": "Section title",
+"id": "cfs-offer-hero",
+"default": "Input title"
+},
+{
+"type": "image_picker",
+"id": "bg-image",
+"label": "Select background Image"
+},
+{
+"type": "image_picker",
+"id": "image_hero",
+"label": "Select hero Image"
+},
+{
+"type": "image_picker",
+"id": "offer-headline",
+"label": "Select offer headline Image"
+},
+{
+"type": "image_picker",
+"id": "offer-subheadline",
+"label": "Select offer subheadline Image"
+}
+],
+"presets": [
+{
+"name": "Campaign Offer Hero CFS"
+}
+]
+}
+{% endschema %}
